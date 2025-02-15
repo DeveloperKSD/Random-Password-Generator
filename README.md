@@ -17,6 +17,4 @@ A sleek, minimalistic web app that generates strong, random passwords on the fly
 ## 🛠️ Installation & Usage  
 
 1. **Clone the repository:**  
-   ```bash
-   git clone https://github.com/your-username/random-pass-generator.git
-   cd random-pass-generator
+   https://github.com/DeveloperKSD/Random-Password-Generator.git
