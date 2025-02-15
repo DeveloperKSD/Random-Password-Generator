@@ -23,7 +23,7 @@ body {
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 400px;
 }
 
 /* Headings & Text */
@@ -42,7 +42,7 @@ p {
 input {
     width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin-bottom: 3px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -52,7 +52,7 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 1PX;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -63,6 +63,7 @@ button {
 #generateButton {
     background-color: #007bff;
     color: white;
+    margin-bottom: 30px;
 }
 
 #generateButton:hover {
