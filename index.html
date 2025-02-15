@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Random Password Generator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>WELCOME TO MY WEBSITE<br>CLICK TO GENERATE A <span>RANDOM PASSWORD</span></h1>
-        <div class="display">
-            <input type="text" id="password" placeholder="password">
-            <img src="copy.png" alt="copy pic" id="copypic">
-        </div>
-        <button onclick="createPass()">
-            <img src="magic-wand.png" alt="wand">
-            Generate password
-        </button>
-    </div>
-
-    
-   
+    <h1>Welcome to Random Password Generator!</h1>
+    <div class="container">
+        <p>Enter the desired length of the password</p>
+        <input type="number" id="passLength">
+        <br>
+    <p>
+        <button id="generateButton" onclick="isValidLength()">GENERATE</button>
+    </p>
+        <input type="text" id="passwordOutput">
+        
+        <button onclick="copyFunction()">COPY</button>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>
