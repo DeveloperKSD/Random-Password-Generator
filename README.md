@@ -18,3 +18,6 @@ A sleek, minimalistic web app that generates strong, random passwords on the fly
 
 1. **Clone the repository:**  
    https://github.com/DeveloperKSD/Random-Password-Generator.git
+
+   
+![image](https://github.com/user-attachments/assets/e2a510e5-524e-469e-8743-2951d42a1ba1)
