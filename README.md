@@ -3,7 +3,7 @@
 A sleek, minimalistic web app that generates strong, random passwords on the fly. No more weak passwords—secure your accounts like a pro!  
 
 ## 🚀 Live Demo  
-[🔗 Check it out here]() 
+[🔗 Check it out here](https://developerksd.github.io/Random-Password-Generator/) 
 
 ## 🎯 Features  
 ✅ Generate random passwords between 4 to 50 characters  
