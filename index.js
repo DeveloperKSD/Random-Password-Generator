@@ -1,20 +1,35 @@
-const passwordBox = document.getElementById("password")
-const length = 16;
 
-const upperCase = "ABCDEFGHIJKLMNOPQRSUVWXYXZ"
-const lowerCase = "abcdefghijklmnopqrsuvwxyz"
-const numbers = "0123456789"
-const symbols = "!@#$%^&*()"
-const allChars = upperCase + lowerCase + numbers + symbols;
-function createPass(){
-    let password="";
-    password += upperCase[Math.floor(Math.random()*upperCase.length)];
-    password += lowerCase[Math.floor(Math.random()*lowerCase.length)];
-    password += numbers[Math.floor(Math.random()*numbers.length)];
-    password += symbols[Math.floor(Math.random()*symbols.length)];
+function isValidLength(){
+    let numberOfLetters=document.getElementById("passLength").value;
 
-    while(length>password.length){
-        password += allChars[Math.floor(Math.random()* allChars.length)];
+    if(isNaN(numberOfLetters) || length<4 && length>50){
+        alert("Enter a valid length between 4-50" )
+        return;
     }
-    passwordBox.value=password;
+
+    let password=getPass(numberOfLetters);
+    document.getElementById("passwordOutput").value=password
+}
+
+function getPass(numberOfLetters){
+    let caps="ABCDEFGHIJKLMNOPQRSUVWXYZ";
+    let smalls="abcdefghijklmnopqrsuvwxyxz";
+    let numbers="1234567890";
+    let symbols="!@#$%^&*()_+<>"
+
+    let allChar= caps + smalls + numbers + symbols;
+    let pass="";
+
+    for(let i=0;i<numberOfLetters;i++){
+        pass=pass+allChar[Math.floor(Math.random()*allChar.length)];
+    }
+
+    return pass;
+}
+
+function copyFunction(){
+    let copypass=document.getElementById("passwordOutput");
+    copypass.select();
+    document.execCommand("copy")
+    alert("COPIED TO CLIPBOARD!")
 }
