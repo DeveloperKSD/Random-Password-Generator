@@ -21,3 +21,6 @@ A sleek, minimalistic web app that generates strong, random passwords on the fly
 
    
 ![image](https://github.com/user-attachments/assets/e2a510e5-524e-469e-8743-2951d42a1ba1)
+
+
+This README used to be a normal file, then it took an arrow to the knee. ⚔️
